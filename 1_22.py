@@ -4,11 +4,10 @@ def printArray(s, r, d):
         result += [s[i]] * r[i]
     print(result)
 
-
 def partitions_1(n):
+    c_1 = 0
     s = [0] * (n * 2)
     r = [0] * (n * 2)
-    d = 1
     s[1] = n
     r[1] = 1
     d = 1
@@ -35,6 +34,8 @@ def partitions_1(n):
             r[d] = 1
 
         printArray(s, r, d)
+        c_1 += 1
+    print("Кількість проходів:", c_1)
 
 print('All Unique Partitions of 3')
 partitions_1(3)

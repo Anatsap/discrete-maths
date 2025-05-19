@@ -9,9 +9,6 @@ def print_partition(block, n):
         print("{", *group[key], "}", end=" ")
     print()
 
-
-
-
 def partitionss(n):
     block = [0] * (n * 2)
     forward = [0] * (n * 2)
@@ -51,6 +48,6 @@ def partitionss(n):
             j -= 1
 
 if __name__ == "__main__":
-    print("All Unique Partitions of 3:")
+    print("All Unique Partitions of 4:")
     partitionss(4)
 
